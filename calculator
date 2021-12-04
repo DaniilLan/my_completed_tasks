@@ -1,0 +1,46 @@
+from math import *
+while True:
+      s = input("Знак ('+', '-', '*', '/', 'sin', 'cos', 'factorial', 'sqrt', 'log'): ")
+      if s == '0':
+          break
+      if s in ('+', '-', '*', '/', 'sin', 'cos', 'factorial', 'sqrt', 'log'):
+          if s == '+':
+            x = float(input("x="))
+            y = float(input("y="))
+            print(eval('x+y'))
+          elif s == '-':
+            x = float(input("x="))
+            y = float(input("y="))
+            print(eval(x-y))
+          elif s == '*':
+            x = float(input("x="))
+            y = float(input("y="))
+            print(eval(x*y))
+          elif s == 'sin':
+            x = float(input("x="))
+            print(eval(sin(x)))
+          elif s == 'cos':
+            x = float(input("x="))
+            print(eval(cos(x)))
+          elif s == 'tan':
+            x = float(input("x="))
+            print(eval(tan(x)))
+          elif s == 'factorial':
+            x = float(input("x="))
+            print(eval(factorial(x)))
+          elif s == 'sqrt':
+            x = float(input("x="))
+            print(eval(sqrt(x)))
+          elif s == 'log':
+            x = float(input("x="))
+            y = float(input("y="))
+            print(eval(log(x,y)))
+          elif s == '/':
+              x = float(input("x="))
+              y = float(input("y="))
+              if y != 0 :
+                print(eval(x/y))
+              else:
+                  print("Деление на ноль!")
+      else:
+          print("Неверный знак операции!")
