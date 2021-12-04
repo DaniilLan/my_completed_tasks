@@ -1,0 +1,47 @@
+from math import *
+print("Ноль в качестве знака операции завершит работу программы")
+while True:
+    s = input("Знак ('+', '-', '*', '/', 'sin', 'cos', 'factorial', 'sqrt', 'log'): ")
+    if s == '0':
+        break
+    if s in ('+', '-', '*', '/', 'sin', 'cos', 'factorial', 'sqrt', 'log'):
+        if s == '+':
+          x = float(input("x="))
+          y = float(input("y="))
+          print("%.2f" % (x+y))
+        elif s == '-':
+          x = float(input("x="))
+          y = float(input("y="))
+          print("%.2f" % (x-y))
+        elif s == '*':
+          x = float(input("x="))
+          y = float(input("y="))
+          print("%.2f" % (x*y))
+        elif s == 'sin':
+          x = float(input("x="))
+          print("%.2f" %  (sin(x)))
+        elif s == 'cos':
+          x = float(input("x="))
+          print("%.2f" % (cos(x)))
+        elif s == 'tan':
+          x = float(input("x="))
+          print("%.2f" % (tan(x)))
+        elif s == 'factorial':
+          x = float(input("x="))
+          print("%.2f" % (factorial(x)))
+        elif s == 'sqrt':
+          x = float(input("x="))
+          print("%.2f" % (sqrt(x)))
+        elif s == 'log':
+          x = float(input("x="))
+          y = float(input("y="))
+          print("%.2f" % (log(x,y)))
+        elif s == '/':
+            x = float(input("x="))
+            y = float(input("y="))
+            if y != 0 :
+              print("%.2f" % (x/y))
+            else:
+                print("Деление на ноль!")
+    else:
+        print("Неверный знак операции!")
