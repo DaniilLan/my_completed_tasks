@@ -9,7 +9,7 @@ for i in range(quantity_ticket):
   elif age >= 25:
     all_price += 1390
 
-if quantity_ticket > 3:
+if quantity_ticket > 3 and all_price:
   all_price = all_price - all_price * 0.1
   print(f"Стоимость всех билетов = {int(all_price)} руб, c учётом скидки в 10%")
 else:
