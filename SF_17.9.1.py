@@ -8,17 +8,17 @@ def sort_list(arr):
 
 
 def binary_search(arr, x):
-    left = 0
-    right = len(arr)-1
-    while left <= right:
-        mid = (left + right) // 2
+    first = 0
+    last = len(arr)-1
+    while first <= last:
+        mid = (first + last) // 2
         if arr[mid] == x:
             return mid
         elif arr[mid] < x:
-            left = mid + 1
+            first = mid + 1
         else:
-            right = mid - 1
-    return left
+            last = mid - 1
+    return first
 
 
 
